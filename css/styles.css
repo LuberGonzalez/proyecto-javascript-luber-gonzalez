@@ -1,0 +1,197 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos base */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    flex-grow: 1;
+  }
+  
+  .navbar-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:#fff;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    text-decoration: none;
+    
+  }
+  
+  .navbar-link {
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-link:hover {
+    background-color: #444;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-brand,
+    .navbar-links {
+      flex-grow: initial;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      background-color: #333;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      margin-right: 1rem;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  
+    .navbar-links.show {
+      display: flex;
+    }
+  
+    .navbar-link {
+      margin: 0.5rem 0;
+    }
+  }
+
+
+
+  /* Estilos Navbar */
+
+/* Estilos Card */
+
+  .pictures-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    min-height: 400px;
+  }
+
+  .card img {
+    /* width: auto; */
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+    text-align: justify;
+    margin: 10px;
+    flex-grow: 1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+/* Estilos Card */
+
+
+#apod-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .apod-image {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  #apod-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .apod-details {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  #apod-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  #apod-date {
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  #apod-explanation {
+    text-align: justify;
+  }

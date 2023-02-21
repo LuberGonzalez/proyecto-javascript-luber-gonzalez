@@ -25,3 +25,9 @@ Para utilizar este sitio web, simplemente abra el archivo `index.html` en su nav
 - Permitir a los usuarios buscar imágenes por categoría o fecha
 - Agregar más información sobre el universo y las imágenes
 - Hacer que el sitio web sea responsivo para dispositivos móviles
+
+
+### Demo
+
+
+![Imagen del Proyecto](./img/nasa_api.png)
